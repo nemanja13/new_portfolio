@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+::selection{ 
+    background-color: rgb(0, 225, 255);
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+.view{
+    padding: 50px 100px;
+    width: 100%;
+}
+#background{
+    border-bottom: 4px solid rgb(0, 225, 255);
+    background-image: url('../img/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 20px;
+    min-height: 100vh;
+}
+#background img{
+    width: 300px;
+    position: absolute;
+    z-index: 99;
+    left: 80px;
+}
+#nav{
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    background-image: linear-gradient(#181818, #141414);
+    left: 0px;
+    z-index: 99;
+    padding: 10px;
+}
+h1, h2, h3{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.blue{
+    color: rgb(0, 225, 255);
+}
+#nav, #nav ul, #aboutSkills, #soc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav ul, #soc ul{
+    flex-direction: column;
+    list-style-type: none;
+}
+#nav ul li a, #soc a{
+    color: #c2c2c2;
+    line-height: 65px;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+#nav ul li a:hover, #soc a:hover{
+    color: rgb(0, 225, 255);
+    transition: 0.3s;
+}
+#logo-small{
+    position: absolute;
+    top: 30px;
+    width: 60px;
+    display: none;
+}
+#languageLink{
+    position: absolute;
+    bottom: 30px;
+    z-index: 5;
+    width: 35px;
+}
+#language{
+    width: 100%;
+    border: 2px solid rgb(0, 225, 255);
+}
+#aboutSkills{
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#aboutSkills > div {
+    height: 100%;
+    padding: 30px;
+    width: 50%;
+}
+#about p, #skills p{
+    text-align: justify;
+    line-height: 28px;
+    word-spacing: 1.5px;
+    font-size: 18px;
+}
+#soc{
+    position: fixed;
+    right: 18px;
+    bottom: 50px;
+    z-index: 99;
+}
+.line{
+    width: 50px;
+    height: 4px;
+    background-color: rgb(0, 225, 255);
+    margin-bottom: 30px;
+}
+#projects{
+    position: relative;
+}
+#listProjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project{
+    background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+    color: #B3B8CD;
+    width: 28%;
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    padding: 15px;
+}
+.project p, .project h3{
+    padding: 10px;
+}
+.project h4{
+    padding-bottom: 10px;
+    font-size: 15px;
+
+}
+.links{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+	border: 1px solid rgb(0, 225, 255);
+	border-radius: 3px;
+	color: rgb(0, 225, 255);
+	font-weight: 500;
+	padding: 10px 25px;
+}
+.tags{
+    background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    min-height: 150px;
+}
+.tag{
+    border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+#skillsWrap{
+    display: flex;
+    justify-content: space-between;
+}
+#skillsWrap ul{
+    padding-top: 15px;
+    list-style-position: inside;
+    line-height: 1.5;
+}
+#contact{
+    clip-path: polygon(50% 15%, 60% 0, 100% 0, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 0, 40% 0);
+    background-color: #141414;
+    padding-bottom: 100px;
+}
+#triangle{
+    position: absolute;
+    background-color: rgb(0, 225, 255);
+    bottom: -104px;
+    left: 0px;
+    width: 100%;
+    height: 108px;
+    z-index: -1;
+}
+#contactHeadline{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 100px;
+}
+#contact .line{
+    margin: 0px auto;
+}
+#contactForm{
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+#wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#name, #email{
+    width: 45%;
+}
+#subject, #message{
+    width: 100%;
+}
+#contactForm input, textarea{
+    padding: 15px 10px;
+    margin-top: 10px;
+    background-color: #2d2d2d;
+    color: #c2c2c2;
+    border: none;
+    font-size: 16px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+textarea{
+    resize: none;
+}
+#contactForm #submit{
+    border: 2px solid rgb(0, 225, 255);
+    background-color: #141414;
+    color: rgb(0, 225, 255);
+    padding: 8px 18px;
+    transition: 0.3s;
+}
+textarea:focus, #contactForm input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 225, 255);
+}
+#contactForm #submit:hover{
+    color: #fff;
+    background-color: rgb(0, 225, 255);
+}
+@media only screen and (max-width: 1140px) {
+    .project{
+        width: 45%;
+    }
+    #aboutSkills > div{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .project{
+        width: 60%;
+    }
+    #wrap > input{
+        width: 100%;
+    }
+    #contact{
+        clip-path: polygon(50% 12%, 60% 0, 100% 0, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 0, 40% 0);
+    }
+    .view{
+        padding: 50px 10px 50px 100px;
+    }
+    h1{
+        font-size: 35px;
+        line-height: 60px;
+        top: 22%;
+    }
+    #soc{
+        right: 5px;
+    }
+}
+@media only screen and (max-width: 570px){
+    .project{
+        width: 90%;
+    }
+    #skillsWrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #skillsWrap > div{
+        width: 100%;
+        padding: 20px;
+    }
+    #aboutSkills > div{
+        padding: 0px;
+    }
+    #about p, #skillsWrap{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width: 460px){
+    #nav{
+        width: 60px;
+    }
+    #logo-small{
+        width: 50px;
+    }
+    #nav ul li a{
+        font-size: 8px;
+        line-height: 65px;
+    }
+    .view {
+        padding: 50px 10px 50px 70px;
+    }
+    h1{
+        font-size: 30px;
+        line-height: 60px;
+        top: 22%;
+    }
+    #languageLink{
+        width: 25px;
+    }
+    #contact{
+        clip-path: polygon(50% 8%, 60% 0, 100% 0, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 0, 40% 0);
+    }
+    #background img {
+        width: 255px;
+        left: 55px;
+    }
+}

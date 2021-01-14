@@ -133,7 +133,7 @@ h1{
     justify-content: space-around;
 }
 .project{
-    background-color: #231E39;
+    background-color: #242424;
 	border-radius: 5px;
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
     color: #B3B8CD;
@@ -169,7 +169,7 @@ h1{
 	padding: 10px 25px;
 }
 .tags{
-    background-color: #1F1A36;
+    background-color: #141414;
 	text-align: left;
 	padding: 15px;
     margin-top: 30px;
@@ -235,7 +235,7 @@ h1{
 #subject, #message{
     width: 100%;
 }
-#contactForm input, textarea{
+#contactForm input, textarea, button{
     padding: 15px 10px;
     margin-top: 10px;
     background-color: #2d2d2d;
@@ -311,6 +311,12 @@ textarea:focus, #contactForm input:focus{
     #about p, #skillsWrap{
         padding: 20px;
     }
+    .links a{
+        padding: 10px 5px;
+    }
+    #contactHeadline {
+        padding-top: 60px;
+    }
 }
 @media only screen and (max-width: 460px){
     #nav{
@@ -340,5 +346,9 @@ textarea:focus, #contactForm input:focus{
     #background img {
         width: 255px;
         left: 55px;
+    }
+    #contactForm {
+        width: 68%;
+        margin: 50px 10px 0px 70px;
     }
 }

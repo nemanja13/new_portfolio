@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nemanja Maksimovic | Web Developer</title>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/alertify.min.css">
     <link rel="shortcut icon" href="assets/img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 </head>
@@ -30,7 +31,7 @@
                 </li>
             </ul>
         </nav>
-        <a id="languageLink" href="#" title="Change to Serbian language"><img id="language" src="assets/img/srb.png" alt="Flag of Republic of Serbia"/></a>
+        <a id="languageLink" href="#" title="Switch to Serbian"><img id="language" src="assets/img/srb.png" alt="Flag of Republic of Serbia"/></a>
     </section>
     <section id="soc">
         <ul>
@@ -183,8 +184,8 @@
         <div class="line"></div>
         <form id="contactForm" autocomplete="off">
             <div id="wrap">
-                <input type="text" name="name" id="name" placeholder="Name"/>
-                <input type="text" name="email" id="email" placeholder="Email"/>
+                <div><input type="text" name="name" id="name" placeholder="Name"/></div>
+                <div><input type="email" name="email" id="email" placeholder="Email"/></div>
             </div>
             <input type="text" name="subject" id="subject" placeholder="Subject"/>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
@@ -192,6 +193,7 @@
         </form>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/alertify.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

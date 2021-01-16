@@ -229,21 +229,20 @@ h1{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-#name, #email{
+#wrap > div{
     width: 45%;
 }
-#subject, #message{
+input, #message{
     width: 100%;
 }
 #contactForm input, textarea, button{
     padding: 15px 10px;
-    margin-top: 10px;
+    margin-top: 12px;
     background-color: #2d2d2d;
     color: #c2c2c2;
-    border: none;
+    border: 1px solid transparent;
     font-size: 16px;
     transition: 0.3s;
-    box-sizing: border-box;
 }
 textarea{
     resize: none;
@@ -262,6 +261,9 @@ textarea:focus, #contactForm input:focus{
 #contactForm #submit:hover{
     color: #fff;
     background-color: rgb(0, 225, 255);
+}
+.error{
+    border-color: #f00 !important;
 }
 @media only screen and (max-width: 1140px) {
     .project{
@@ -352,3 +354,11 @@ textarea:focus, #contactForm input:focus{
         margin: 50px 10px 0px 70px;
     }
 }
+
+
+
+
+
+
+
+
